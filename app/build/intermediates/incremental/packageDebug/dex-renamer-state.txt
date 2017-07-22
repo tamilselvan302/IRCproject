@@ -1,0 +1,7 @@
+#Fri Jul 21 18:22:24 IST 2017
+base.0=/home/limat/AndroidStudioProjects/Myapplicationx1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_769f3932b61cac75139b5a9fc342160af77dba16
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/limat/AndroidStudioProjects/Myapplicationx1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_95222b066482cc08aba2ea64271f74dcdb4f8096/classes.dex
+base.1=/home/limat/AndroidStudioProjects/Myapplicationx1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_95222b066482cc08aba2ea64271f74dcdb4f8096
+file.0=/home/limat/AndroidStudioProjects/Myapplicationx1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_769f3932b61cac75139b5a9fc342160af77dba16/classes.dex

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.home.myapplicationx1.Main2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true">
+
+
+
+
+
+            <TextView
+                android:id="@+id/page2_heading"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="ACCIDENT IDENTIFICATION DETAILS"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="-8dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/fir_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/page2_heading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:hint="FIR no"
+
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/time_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/fir_entry"
+                android:layout_below="@+id/fir_entry"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:hint="time"
+
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/police_station_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/time_entry"
+                android:layout_below="@+id/time_entry"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:hint="police station"
+
+                android:inputType="textPersonName" />
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/no_of_motor_vehicles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+
+                android:hint="no of motor vehicles involved"
+                android:inputType="number"
+                android:layout_below="@+id/police_station_entry"
+                android:layout_alignStart="@+id/police_station_entry" />
+
+            <EditText
+                android:id="@+id/no_of_non_motor_vehicles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+
+                android:hint="no of non-motor vehicles involved"
+                android:inputType="number"
+                android:layout_below="@+id/no_of_motor_vehicles"
+                android:layout_alignStart="@+id/no_of_motor_vehicles" />
+
+            <EditText
+                android:id="@+id/no_of_pedestrians"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:ems="10"
+
+                android:hint="no of pedestrians involved"
+                android:inputType="number"
+                android:layout_below="@+id/no_of_non_motor_vehicles"
+                android:layout_alignStart="@+id/no_of_non_motor_vehicles" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/road_name_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+
+                android:layout_below="@id/no_of_pedestrians"
+                android:hint="Road Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/road_no_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+
+                android:hint="Road Number"
+                android:layout_below="@+id/road_name_entry"
+                android:inputType="phone" />
+
+
+            <EditText
+                android:id="@+id/landmark_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+
+                android:hint="Landmark"
+                android:layout_below="@+id/road_no_entry"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/road_chainage_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Road Chainage"
+
+                android:layout_below="@+id/landmark_entry"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/get_location"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="GetLocation and save"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/road_chainage_entry"
+                android:layout_centerHorizontal="true" />
+
+
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/get_location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="save" />
+
+
+            <Button
+                android:id="@+id/next_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/save_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Next" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.widget.RelativeLayout>

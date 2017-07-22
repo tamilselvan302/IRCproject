@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.home.myapplicationx1.Main3Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true">
+
+
+
+
+
+            <TextView
+                android:id="@+id/page2_heading"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="ACCIDENT IDENTIFICATION DETAILS"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="-8dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/type_of_area_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/page2_heading"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Type of area"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/type_of_area"
+                android:layout_width="390dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_of_area_heading"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/urban"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/urban"
+                    android:text="Urban" />
+
+                <RadioButton
+                    android:id="@+id/rural"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rural"
+                    android:text="Rural" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/accident_type_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_of_area"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Accident Type"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/accident_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accident_type_heading"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/fatal"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fatal" />
+
+                <RadioButton
+                    android:id="@+id/Grieve"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grieveous Injury" />
+
+                <RadioButton
+                    android:id="@+id/NonInjury"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Non Injury" />
+
+
+                <RadioButton
+                    android:id="@+id/Minor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Minor Injury" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/property_damage_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accident_type"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Property Damage"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/property_damage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property_damage_heading"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/publ"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="public" />
+
+                <RadioButton
+                    android:id="@+id/pri"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grieveous Injury" />
+
+                <RadioButton
+                    android:id="@+id/other"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Non Injury" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/type_of_weather_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/property_damage"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Type of weather"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/type_of_weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_of_weather_heading">
+
+                <RadioButton
+                    android:id="@+id/sun"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sunny"
+                    android:text="Sunny" />
+
+                <RadioButton
+                    android:id="@+id/rainy"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rainy"
+                    android:text="rainy" />
+
+                <RadioButton
+                    android:id="@+id/foggy"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fog"
+                    android:text="foggy" />
+
+                <RadioButton
+                    android:id="@+id/Hail"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hail"
+                    android:text="Hail" />
+                <RadioButton
+                    android:id="@+id/oth"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="other" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/other_type_of_weather_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_of_weather"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+
+                android:hint="type of weather if other"
+                android:inputType="textPersonName" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/type_of_collision_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/other_type_of_weather_entry"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+
+                android:text="Type of Collision"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/type_of_collision"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_of_collision_heading"
+                android:orientation="vertical">
+
+
+                <RadioButton
+                    android:id="@+id/pedestrian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pedestrain"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:text="Pedestrian" />
+
+                <RadioButton
+                    android:id="@+id/hit_from_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/hitfromback"
+                    android:text="Hit from Back" />
+
+                <RadioButton
+                    android:id="@+id/hit_from_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/fromside"
+                    android:text="Hit from Side" />
+
+                <RadioButton
+                    android:id="@+id/run_off_road"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:background="@drawable/offroad"
+                    android:text="Run Off Road" />
+
+                <RadioButton
+                    android:id="@+id/with_animal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/withanim"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="With Animal" />
+
+                <RadioButton
+                    android:id="@+id/stationary_object"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/station"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="Fixed /Stationary object" />
+
+                <RadioButton
+                    android:id="@+id/parked_vehicle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/parked"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="With Parked vehicle" />
+
+                <RadioButton
+                    android:id="@+id/vehicle_overturn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/over"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="vehicle overturn" />
+
+                <RadioButton
+                    android:id="@+id/head_on_collision"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:background="@drawable/headon"
+                    android:text="head on collision" />
+
+                <RadioButton
+                    android:id="@+id/otherr"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+
+                    android:text="other" />
+
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/other_type_of_collision_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_of_collision"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:hint="Specify if other type"
+
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/hit_and_run_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/other_type_of_collision_entry"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Hit and Run"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/hit_and_run"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hit_and_run_heading"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/hit_yes"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/hit_no"
+                    android:textSize="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+
+            </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:text="Road Related Details"
+                android:layout_below="@id/hit_and_run"
+                android:id="@+id/road_related_details_headings"
+                android:layout_gravity="center_horizontal" />
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="Road Type"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/road_related_details_headings"
+                android:id="@+id/road_type_heading"
+                android:layout_gravity="center_horizontal" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/road_type"
+                android:layout_below="@+id/road_type_heading">
+
+                <RadioButton android:id="@+id/expressway"
+                    android:layout_width="417dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:background="@drawable/expressway"
+                    android:text="Expressway"
+                    />
+                <RadioButton android:id="@+id/national_highway"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="National Highway"
+                    android:textSize="20dp"
+                    android:background="@drawable/nathigh"
+                    />
+                <RadioButton android:id="@+id/state_highway"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="State Highway"
+                    android:textSize="20dp"
+                    android:background="@drawable/statehigh"
+                    />
+                <RadioButton android:id="@+id/other_roads"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Other Roads "
+
+                    />
+
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="Lanes"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/lanes_heading"
+                android:layout_below="@+id/road_type"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lanes"
+                android:layout_below="@+id/lanes_heading"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/more_lanes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 Lanes or more"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/threelane"
+                    />
+                <RadioButton android:id="@+id/less_lanes"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="Less than two lanes"
+                    android:background="@drawable/onelane"
+                    />
+
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="Surface Condition"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/surface_condition_heading"
+                android:layout_below="@+id/lanes"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/surface_condition"
+                android:layout_below="@+id/surface_condition_heading">
+
+                <RadioButton android:id="@+id/paved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="paved"
+                    android:background="@drawable/pavedroad"
+                    />
+                <RadioButton android:id="@+id/unpaved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="Unpaved"
+                    android:background="@drawable/unpaved"
+                    />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="Physical Divider"
+                android:background="@drawable/divider"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/physical_divider_heading"
+                android:layout_below="@+id/surface_condition"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/physical_divider"
+
+                android:layout_below="@+id/physical_divider_heading"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/physical_divider_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Yes"
+                    />
+                <RadioButton android:id="@+id/physical_divider_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="No"
+                    />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="Speed limit"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/physical_divider"
+                android:id="@+id/speed_limit_heading"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/speed_limit_heading"
+                android:id="@+id/speed_limit"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/less_than_40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="less than 40"
+
+                    />
+                <RadioButton android:id="@+id/between40_60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="40-60"
+                    />
+                <RadioButton android:id="@+id/between60_80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="60-80"
+                    />
+                <RadioButton android:id="@+id/more_than_80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="80"
+                    />
+
+                <RadioButton android:id="@+id/no_speed_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No speed sign"
+
+                    />
+
+
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="ongoing Construction"
+                android:background="@drawable/construction"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/speed_limit"
+                android:id="@+id/ongoing_construction_heading"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ongoing_construction"
+                android:layout_below="@+id/ongoing_construction_heading"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/ongoing_construction_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+
+                    />
+                <RadioButton android:id="@+id/ongoing_construction_no"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="Visibility"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/ongoing_construction"
+                android:id="@+id/visibility_heading"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/visibility"
+
+                android:layout_below="@+id/visibility_heading"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/visibility_good"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Good"
+
+                    />
+                <RadioButton android:id="@+id/visibilty_poor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Poor"
+
+                    />
+                <RadioButton android:id="@+id/visibility_not_known"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Not Known"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/road_features_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_below="@+id/visibility"
+                android:text="Road Features"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:id="@+id/road_features"
+                android:layout_below="@+id/road_features_heading"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton android:id="@+id/straight_road"
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:text="straight road"
+                    android:textSize="20dp"
+                    android:background="@drawable/straightroad"
+                    />
+                <RadioButton android:id="@+id/curved_road"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/culvert"
+                    android:textSize="20dp"
+                    android:text="curved road"
+                    />
+                <RadioButton android:id="@+id/bridge"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bridge"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bridge"
+                    />
+                <RadioButton android:id="@+id/culvert_road"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/culvert"
+                    android:textSize="20dp"
+                    android:text="Culvert"
+                    />
+
+                <RadioButton android:id="@+id/pot_holes"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/potholes"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pot Holes"
+                    />
+
+
+                <RadioButton android:id="@+id/steep_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/steepgrade"
+                    android:textSize="20dp"
+                    android:text="steep grade"
+                    />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="Road Junction"
+                android:id="@+id/road_junction_heading"
+                android:layout_below="@+id/road_features"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/road_junction"
+                android:layout_below="@+id/road_junction_heading"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/t_junction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:background="@drawable/tjunction"
+                    android:text="T junction"
+                    android:textColor="@color/white"
+                    />
+                <RadioButton android:id="@+id/y_junction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yjun"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="Y junction"
+                    />
+
+                <RadioButton android:id="@+id/four_arm_junction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yjun"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="Four arm junction"
+                    />
+                <RadioButton android:id="@+id/staggered_junction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Staggered junction"
+                    android:textSize="20dp"
+                    android:background="@drawable/staggered"
+                    />
+
+                <RadioButton android:id="@+id/round_about_junction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Round About junction"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/roundabout"
+                    />
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:layout_below="@+id/road_junction"
+                android:text="Type of traffic control"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/type_of_traffic_control_heading"
+                android:layout_gravity="center_horizontal" />
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/type_of_traffic_control"
+                android:layout_below="@+id/type_of_traffic_control_heading"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/traffic_light_signal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/trafic"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="Traffic Light Signal "
+                    />
+                <RadioButton android:id="@+id/police_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/policecontrol"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="Police Control "
+                    />
+                <RadioButton android:id="@+id/stop_signal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stop"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="Stop Sign"
+                    />
+                <RadioButton android:id="@+id/flashing_signal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/flashingblinker"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="Flashing Signal/Blinker "
+                    />
+
+                <RadioButton android:id="@+id/uncontrollable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/uncontrolled"
+                    android:text="Uncontrolled "
+                    />
+
+
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="Pedestrian Involved "
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/pedestrian_involved_heading"
+                android:layout_below="@+id/type_of_traffic_control"
+                android:layout_gravity="center_horizontal" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pedestrian_involved"
+                android:layout_below="@+id/pedestrian_involved_heading"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <RadioButton android:id="@+id/no_facilty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nofac"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text="No Facility "
+
+                    />
+                <RadioButton android:id="@+id/footpath"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/footpath"
+                    android:text="Footpath "
+                    />
+                <RadioButton android:id="@+id/zebra_crossing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/zebracrossing"
+                    android:text="Zebra Crossing "
+                    />
+                <RadioButton android:id="@+id/foot_bridge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/footbridge"
+                    android:text="Foot Bridge/subway"
+                    android:layout_weight="0.59" />
+                <RadioButton android:id="@+id/pedestrian_not_applicable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Not Applicable"
+                    />
+
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/save_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pedestrian_involved"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="save" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/save_button2"
+                android:id="@+id/submit_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:text="submit"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.widget.RelativeLayout>
